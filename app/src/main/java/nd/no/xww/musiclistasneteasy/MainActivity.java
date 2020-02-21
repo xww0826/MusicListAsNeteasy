@@ -1,15 +1,12 @@
 package nd.no.xww.musiclistasneteasy;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -18,11 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.load.engine.GlideException;
-import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.target.Target;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -125,11 +118,6 @@ public class MainActivity extends AppCompatActivity {
             drawable.mutate().setAlpha((int) (alpha * 255));
         }
         iv_bg.setImageDrawable(drawable);
-
-
-//        Log.i(TAG, "scrollY: " + scrollY);
-//        Log.i(TAG, "alpha: " + alpha);
-//        Log.i(TAG, "px: " + px);
     }
 
     @Override
